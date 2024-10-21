@@ -47,8 +47,6 @@ return [
             'creation_date',
             'modification_date',
             'application_process_progress',
-            'debug_num_applications with status',
-            'debug_num_applications eligible',
           ],
           'orderBy' => [
             'id' => 'DESC',
@@ -159,20 +157,6 @@ return [
               'key' => 'amount_approved',
               'dataType' => 'Money',
               'label' => E::ts('Amount Approved'),
-              'sortable' => TRUE,
-            ],
-            [
-              'type' => 'field',
-              'key' => 'debug_num_applications eligible',
-              'dataType' => 'Integer',
-              'label' => E::ts('Debug num applications eligible'),
-              'sortable' => TRUE,
-            ],
-            [
-              'type' => 'field',
-              'key' => 'debug_num_applications with status',
-              'dataType' => 'Integer',
-              'label' => E::ts('Debug num applications status'),
               'sortable' => TRUE,
             ],
             [
