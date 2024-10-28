@@ -93,11 +93,11 @@ msgstr "Die Summe der Beträge akzeptierter Mittelabrufe."
 
 #: Civi/Funding/Api4/Action/FundingCase/GetFieldsAction.php managed/SavedSearchFundingCases.mgd.php
 msgid "Review Progress"
-msgstr "Fortschritt Überprüfung"
+msgstr "Prüffortschritt"
 
 #: Civi/Funding/Api4/Action/FundingCase/GetFieldsAction.php
 msgid "The progress of application review."
-msgstr "Zeigt die Anzahl der überprüften Anträge."
+msgstr "Zeigt die Anzahl der geprüften Anträge."
 
 # Übersetzung nicht notwendig
 #: Civi/Funding/Api4/Action/FundingCaseContactRelationPropertiesFactoryType/GetFieldsAction.php
@@ -2172,10 +2172,6 @@ msgstr "Vorlagen verwalten"
 #: managed/SavedSearchFundingCaseTypes.mgd.php
 msgid "Manage external application templates"
 msgstr "Externe Antragsvorlagen verwalten"
-
-#: managed/SavedSearchFundingCases.mgd.php
-msgid "ID"
-msgstr "ID"
 
 #: managed/SavedSearchFundingCases.mgd.php
 msgid "Open case"

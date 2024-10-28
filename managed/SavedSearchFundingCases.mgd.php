@@ -23,7 +23,7 @@ return [
   [
     'name' => 'SavedSearch_funding_cases',
     'entity' => 'SavedSearch',
-    'cleanup' => 'always',
+    'cleanup' => 'unused',
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
@@ -84,7 +84,7 @@ return [
   [
     'name' => 'SavedSearch_funding_cases_SearchDisplay_table',
     'entity' => 'SearchDisplay',
-    'cleanup' => 'always',
+    'cleanup' => 'unused',
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
@@ -103,13 +103,6 @@ return [
           ],
           'placeholder' => 5,
           'columns' => [
-            [
-              'type' => 'field',
-              'key' => 'id',
-              'dataType' => 'Integer',
-              'label' => E::ts('ID'),
-              'sortable' => TRUE,
-            ],
             [
               'type' => 'field',
               'key' => 'identifier',

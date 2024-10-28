@@ -1575,10 +1575,6 @@ msgid "Manage external application templates"
 msgstr ""
 
 #: managed/SavedSearchFundingCases.mgd.php
-msgid "ID"
-msgstr ""
-
-#: managed/SavedSearchFundingCases.mgd.php
 msgid "Open case"
 msgstr ""
 
