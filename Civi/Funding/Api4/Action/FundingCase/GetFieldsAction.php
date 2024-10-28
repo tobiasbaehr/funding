@@ -124,7 +124,7 @@ final class GetFieldsAction extends DAOGetFieldsAction {
           (
             SELECT
                 COUNT(CASE WHEN fap.is_eligible IS NOT NULL THEN 1 END)
-              / COUNT(CASE WHEN fap.status IS NOT NULL THEN 1 END) 
+              / COUNT(fap.id) 
               * 100
             FROM
               civicrm_funding_application_process AS fap
