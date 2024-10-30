@@ -34,7 +34,6 @@ return [
         'api_params' => [
           'version' => 4,
           'select' => [
-            'id',
             'identifier',
             'status:label',
             'FundingCase_FundingProgram_funding_program_id_01.title',
@@ -46,7 +45,7 @@ return [
             'amount_cleared',
             'creation_date',
             'modification_date',
-            'application_process_progress',
+            'application_process_review_progress',
           ],
           'orderBy' => [
             'id' => 'DESC',
@@ -140,10 +139,11 @@ return [
             ],
             [
               'type' => 'field',
-              'key' => 'application_process_progress',
+              'key' => 'application_process_review_progress',
               'dataType' => 'Integer',
               'label' => E::ts('Review Progress'),
               'sortable' => TRUE,
+              'rewrite' => '[application_process_review_progress] %',
             ],
             [
               'type' => 'field',

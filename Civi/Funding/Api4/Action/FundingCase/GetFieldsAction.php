@@ -113,13 +113,13 @@ final class GetFieldsAction extends DAOGetFieldsAction {
         'sql_renderer' => fn () => '(SELECT NULL)',
       ],
       [
-        'name' => 'application_process_progress',
+        'name' => 'application_process_review_progress',
         'title' => E::ts('Review Progress'),
-        'description' => E::ts('The progress of application review.'),
+        'description' => E::ts('The progress of application review as %.'),
         'type' => 'Extra',
         'data_type' => 'Integer',
         'readonly' => TRUE,
-        'nullable' => FALSE,
+        'nullable' => TRUE,
         'sql_renderer' => fn (array $field, Api4SelectQuery $query) => sprintf('
           (
             SELECT
