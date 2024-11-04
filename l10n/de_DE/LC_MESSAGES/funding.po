@@ -96,7 +96,7 @@ msgid "Review Progress"
 msgstr "Prüffortschritt"
 
 #: Civi/Funding/Api4/Action/FundingCase/GetFieldsAction.php
-msgid "The progress of application review as %."
+msgid "The progress of application review in %."
 msgstr "Zeigt den Fortschritt der Antragsprüfung in Prozent."
 
 # Übersetzung nicht notwendig
