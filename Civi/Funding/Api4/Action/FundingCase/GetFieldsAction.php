@@ -115,7 +115,7 @@ final class GetFieldsAction extends DAOGetFieldsAction {
       [
         'name' => 'application_process_review_progress',
         'title' => E::ts('Review Progress'),
-        'description' => E::ts('The progress of application review in %.'),
+        'description' => E::ts('The progress of application review in percent.'),
         'type' => 'Extra',
         'data_type' => 'Integer',
         'readonly' => TRUE,

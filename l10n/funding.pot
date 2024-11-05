@@ -35,7 +35,7 @@ msgid "Review Progress"
 msgstr ""
 
 #: Civi/Funding/Api4/Action/FundingCase/GetFieldsAction.php
-msgid "The progress of application review in %."
+msgid "The progress of application review in percent."
 msgstr ""
 
 #: Civi/Funding/Api4/Action/FundingCaseContactRelationPropertiesFactoryType/GetFieldsAction.php Civi/Funding/Api4/Action/FundingCaseContactRelationType/GetFieldsAction.php Civi/Funding/Api4/Action/FundingCaseInfo/GetFieldsAction.php Civi/Funding/Api4/Action/FundingProgramContactRelationType/GetFieldsAction.php Civi/Funding/Api4/Action/FundingTransferContract/GetFieldsAction.php Civi/Funding/Api4/Action/RecipientContactRelationType/GetFieldsAction.php
