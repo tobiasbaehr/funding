@@ -34,9 +34,9 @@ final class GetFieldsAction extends DAOGetFieldsAction {
     PermissionsGetFieldsActionTrait::getRecords as traitGetRecords;
   }
 
-  private PossiblePermissionsLoaderInterface $possiblePermissionsLoader;
+  private ?PossiblePermissionsLoaderInterface $possiblePermissionsLoader;
 
-  public function __construct(PossiblePermissionsLoaderInterface $possiblePermissionsLoader) {
+  public function __construct(?PossiblePermissionsLoaderInterface $possiblePermissionsLoader = NULL) {
     parent::__construct(FundingProgram::getEntityName(), 'getFields');
     $this->possiblePermissionsLoader = $possiblePermissionsLoader;
   }
@@ -134,7 +134,12 @@ final class GetFieldsAction extends DAOGetFieldsAction {
    * @phpstan-return array<string, string>
    */
   protected function getPossiblePermissions(): array {
-    return $this->possiblePermissionsLoader->getFilteredPermissions($this->getEntityName());
+    return $this->getPossiblePermissionsLoader()->getFilteredPermissions($this->getEntityName());
+  }
+
+  private function getPossiblePermissionsLoader(): PossiblePermissionsLoaderInterface {
+    // @phpstan-ignore return.type, assign.propertyType
+    return $this->possiblePermissionsLoader ??= \Civi::service(PossiblePermissionsLoaderInterface::class);
   }
 
 }

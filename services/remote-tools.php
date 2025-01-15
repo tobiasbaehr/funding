@@ -41,7 +41,7 @@ $container->register(TransactionFactory::class);
 $container->autowire(OptionsLoaderInterface::class, OptionsLoader::class);
 $container->autowire(PossiblePermissionsLoaderInterface::class, PossiblePermissionsLoader::class)
   // phpcs:disable Squiz.PHP.CommentedOutCode.Found
-  // Used in class \Civi\Funding\Api4\Action\FundingCase\GetAction.
+  // Used in various Action classes.
   // phpcs:enable
   ->setPublic(TRUE);
 

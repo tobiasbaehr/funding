@@ -35,8 +35,8 @@ final class FundingTransferContract extends AbstractEntity {
   /**
    * @inheritDoc
    */
-  public static function getFields() {
-    return \Civi::service(GetFieldsAction::class);
+  public static function getFields(bool $checkPermission = TRUE) {
+    return (new GetFieldsAction())->setCheckPermissions($checkPermission);
   }
 
 }

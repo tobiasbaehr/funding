@@ -67,7 +67,7 @@ final class FundingCase extends Generic\DAOEntity {
    * @return \Civi\Funding\Api4\Action\FundingCase\GetFieldsAction
    */
   public static function getFields($checkPermissions = TRUE) {
-    return \Civi::service(GetFieldsAction::class)->setCheckPermissions($checkPermissions);
+    return (new GetFieldsAction())->setCheckPermissions($checkPermissions);
   }
 
   public static function getPossibleActions(bool $checkPermissions = TRUE): GetPossibleActionsAction {

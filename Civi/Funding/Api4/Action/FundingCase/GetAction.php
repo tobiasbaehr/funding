@@ -215,7 +215,7 @@ final class GetAction extends DAOGetAction {
     return $this->permissionsCacheManager ??= \Civi::service(FundingCasePermissionsCacheManager::class);
   }
 
-  public function getPossiblePermissionsLoader(): PossiblePermissionsLoaderInterface {
+  private function getPossiblePermissionsLoader(): PossiblePermissionsLoaderInterface {
     // @phpstan-ignore return.type, assign.propertyType
     return $this->possiblePermissionsLoader ??= \Civi::service(PossiblePermissionsLoaderInterface::class);
   }
